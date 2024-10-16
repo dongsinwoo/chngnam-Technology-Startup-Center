@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "chungnamws",
+    "e.g": "chungnamws"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

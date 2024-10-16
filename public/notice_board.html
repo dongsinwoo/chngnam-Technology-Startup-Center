@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  <h1>1. 게시글 작성</h1>
+  <div>
+    <label for="title">제목</label>
+    <input type="text" id="title">
+
+    <label for="content">내용</label>
+    <textarea type="text" id="content"></textarea>
+    <button onclick="submit()">작성</button>
+  </div>
+
+  <h1>2. 게시글 리스트</h1>
+  <div id="article"></div>
+
+  <!-- 파베 관련 JS -->
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+
+  <!-- 커스텀 JS -->
+  <script src="./js/database.js"></script>
+  </body>
+</html>

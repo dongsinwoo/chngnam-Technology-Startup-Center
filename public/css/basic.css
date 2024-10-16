@@ -1,0 +1,370 @@
+/* fixed */
+.fixed_k_startup{
+    position: fixed;
+    bottom: 100px;
+    right: 2%;
+    z-index: 999;
+    transition: 2s;
+    opacity: 0;
+}
+.fixed_k_startup.on{
+    opacity: 1;
+}
+.fixed_k_startup a{
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px  rgba(0, 0, 0, .2);
+    
+}
+.fixed_k_startup a .img_box{
+    width: 200px;
+    height: 45px;
+}
+/* 팝업창 */
+.layerpopup{
+    position: fixed;
+    right: 0;
+    top: 7%;
+
+    z-index: 9999;
+    display: none;
+}
+.layerpopup.on{
+    display: block;
+}
+.layerpopup .popup_btn_box{
+    background-color: #343434;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.layerpopup .popup_btn_box  a{
+    color: #fff;
+    padding: 4px 0;
+}
+
+/* 모바일 버튼 숨긱기 */
+.mobile_menu_btn{
+    display: none;
+}
+
+/* 팝업창// */
+/* fixed// */
+
+/* swiper pagenation */
+#swiper_box .pager span{
+    position:relative;
+    width:24px;
+    height:24px;
+    margin:0 5px;
+    background-color:transparent;
+    transition:all .3s;
+    z-index: 99;
+}
+#swiper_box .pager span.on{
+    opacity:1
+}
+#swiper_box .pager span.on:before{
+    opacity:1;
+    width:45px;
+    height:45px;
+}
+
+#swiper_box .pager span:before{
+    opacity:0;
+    display:block;
+    content:"";
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:45px;
+    height:45px;
+    border:1px solid rgb(13, 13, 13);
+    border-radius:50%;
+    transition:all .3s
+}
+
+#swiper_box .pager span:after{
+    display:block;
+    content:"";
+    position:absolute;
+    left:50%;top:50%;
+    transform:translate(-50%,-50%);
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    background:#232323
+}
+/* /swiper */
+
+/* 중장년기술창업센터 하는 일 레이아웃 */
+.h-mid-box{
+    display: flex;
+    justify-content: center;
+}
+.h-content-box{
+    display: flex;
+}
+
+
+.text_20{
+    font-size: 20px;
+}   
+.text_gray{
+    color: #848484;
+}
+.bg-icon{
+    color: #ff9a02;
+}
+.tx-color-nv{
+    color: rgb(0, 0, 178);
+}
+.pc_font_size_head{
+    font-size: 1.25rem;
+}
+.carousel-item{
+    height: 635px;
+    background-color: #CDEFFF;
+}
+.carousel-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.carousel-caption{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sub_page{
+    height: 435px;
+}
+
+.navbar-logo {
+    width: 200px;
+}
+
+.col-sm-3 .card-body{
+    transition: color, 0.4s;
+    cursor: pointer;
+}
+.col-sm-3 .card-body:hover{
+    color: #fff;
+    background-color: #0d6efd;
+}
+
+.col-sm-3 .a_style_reset{
+    color: #343434;
+    text-decoration: none;
+}
+
+.card-body .card-title{
+    white-space: nowrap; /* 텍스트를 한 줄로 유지합니다 */
+    overflow: hidden; /* 넘친 텍스트를 숨깁니다 */
+    text-overflow: ellipsis; 
+}
+
+.navbar-nav .nav-item{
+    position: relative;
+}
+.navbar-nav .nav-item:hover .nav-link{
+    color: #0d6efd;
+}
+.navbar-nav .nav-item a{
+    display: block;
+    padding: 15px 20px;
+    color: #343434;
+    text-decoration: none;
+    transition: color, 0.4s;
+    background-color: #fff;
+}
+.navbar-nav .nav-item .sub-menu a:hover {
+    color: #0d6efd;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 9999;
+}
+.sub-menu li a {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+.navbar-nav .nav-item:hover .sub-menu {
+    display: block;
+}
+
+a.text-blue{
+    color: #0d6efd;
+}
+
+.main_bottom_logo{
+    width: 160px;
+    height: 50px;
+}
+.main_bottom_logo svg{
+    width: 100%;
+    height: 100%;
+}
+.main_bottom_logo img{
+    object-fit: contain;
+}
+
+.justify_list{
+    justify-content: space-evenly;
+}
+/* footer */
+footer{
+    position: relative;
+}
+.footer_text_box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+} 
+
+/* 오시는 길 */
+.kakao_map{
+    width: 1224px;
+    height: 600px;
+    margin:  0 auto;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+/* 입주 */
+.info-img-box{
+    width: 180px;
+    height: 180px;
+    background-color: #ffe5be;
+    border-radius: 100%;
+    border:  solid 1px #e9e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    position: relative;
+}
+.info-img-box .number{
+    position: absolute;
+    left: 0;
+    top: 20px;
+
+    width: 40px;
+    height: 40px;
+    background-color: rgb(74, 74, 140);
+    border-radius: 100%;
+    z-index: 99;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+/* 입주기업현황 */
+.cur-item{
+    box-sizing: border-box;
+    width: 256px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.cur-item .cur-img-box{
+    width: 100%;
+    height: 224px;
+    border: 1px solid #c5c5c5;
+}
+.cur-item .cur-img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* footer 로고 크기조정 */
+@media (max-width: 1080px) {
+    .main_bottom_logo{ 
+        /* width: 160px; height: 50px; */
+        width: 120px;
+        height: 40px;
+    }
+}
+/* footer 로고 크기조정 */
+@media (max-width: 992px) {
+    .mobile_menu_btn{
+        display: block;
+        
+    }
+    .mobile_menu_btn #mobile_check{
+        display: none;
+    }
+    .mobile_menu_btn label{
+        position: relative;
+        width: 40px;
+        height: 20px;
+    }
+    .mobile_menu_btn label span{
+        width: 100%;
+        height: 4px;
+        background-color: #343434;
+        position: absolute;
+        left: 0;
+        border-radius: 3px;
+        transition: all 0.5s;
+    }
+    .mobile_menu_btn label span:nth-child(1){
+        top: 0;
+    }
+    .mobile_menu_btn label span:nth-child(2){
+        top: 50%;
+    }
+    .mobile_menu_btn label span:nth-child(3){
+        top: 100%;
+    }
+
+    .mobile_menu_btn #mobile_check:checked ~ label span:nth-child(1){
+        transform: rotate(45deg);
+        top: 50%;
+    }
+    .mobile_menu_btn #mobile_check:checked ~ label span:nth-child(2){
+        opacity: 0;
+    }
+    .mobile_menu_btn #mobile_check:checked ~ label span:nth-child(3){
+        transform: rotate(-45deg);
+        top: 50%;
+    }
+
+    /* footer */
+    footer .footer_logos{
+        margin-top: 24px;
+    }
+}
+
+/* footer 로고 크기조정 */
+@media (max-width: 830px) {
+    .m-footer_logo_box{
+        flex-wrap: wrap;
+    }
+}
+
