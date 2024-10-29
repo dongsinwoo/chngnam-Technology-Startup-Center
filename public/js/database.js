@@ -12,7 +12,7 @@ const firebaseConfig = {
   
   // 2. 파베 및 디비 초기화 선언
   firebase.initializeApp(firebaseConfig);
-  const database = firebase.database();
+  const database = firebase.firestore();
   const articleRef = database.ref('article');
   
   // 3. 모든 게시물 목록 조회
@@ -56,7 +56,7 @@ const firebaseConfig = {
       }
     });
   
-    database.ref(`article/${articleNo}`).set({
+    database.ref(`posts/${articleNo}`).set({
       no : articleNo,
       title: title,
       content: content,

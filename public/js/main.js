@@ -61,17 +61,6 @@ const headInnerContent = ()=>{
                 </li>
                 <li class="nav-item">
                     <a class="nav-link pr-3 pl-3 d-block" href="notice_board.html">정보 게시판</a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="notice_board.html">공지사항</a>
-                        </li>
-                        <li>
-                            <a href="#none">보도자료</a>
-                        </li>
-                        <li>
-                            <a href="#none">활동갤러리</a>
-                        </li>
-                    </ul>
                 </li>
             </ul>
         </div>

@@ -13,183 +13,66 @@
     <link href="./css/styles.css" rel="stylesheet" />
     <link href="./css/basic.css" rel="stylesheet" />
     <style>
-      table {
-        border-collapse: collapse;
-        border-spacing: 0;
-      }
-      section.notice {
-        padding: 80px 0;
-      }
-
-      .page-title {
-        margin-bottom: 60px;
-      }
-      .page-title h3 {
-        font-size: 28px;
-        color: #333333;
-        font-weight: 400;
-        text-align: center;
-      }
-
-      #board-search .search-window {
-        padding: 15px 0;
-        background-color: #f9f7f9;
-      }
-      #board-search .search-window .search-wrap {
-        position: relative;
-      /*   padding-right: 124px; */
-        margin: 0 auto;
-        width: 80%;
-        max-width: 564px;
-      }
-      #board-search .search-window .search-wrap input {
-        height: 40px;
-        width: 100%;
-        font-size: 14px;
-        padding: 7px 14px;
-        border: 1px solid #ccc;
-      }
-      #board-search .search-window .search-wrap input:focus {
-        border-color: #333;
-        outline: 0;
-        border-width: 1px;
-      }
-      #board-search .search-window .search-wrap .btn {
-        position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        width: 108px;
-        padding: 0;
-        font-size: 16px;
-      }
-
-      .board-table {
-        font-size: 13px;
-        width: 100%;
-        border-top: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
-      }
-
-      .board-table a {
-        color: #333;
-        display: inline-block;
-        line-height: 1.4;
-        word-break: break-all;
-        vertical-align: middle;
-      }
-      .board-table a:hover {
-        text-decoration: underline;
-      }
-      .board-table th {
-        text-align: center;
-      }
-
-      .board-table .th-num {
-        width: 100px;
-        text-align: center;
-      }
-
-      .board-table .th-date {
-        width: 200px;
-      }
-
-      .board-table th, .board-table td {
-        padding: 14px 0;
-      }
-
-      .board-table tbody td {
-        border-top: 1px solid #e7e7e7;
-        text-align: center;
-      }
-
-      .board-table tbody th {
-        padding-left: 28px;
-        padding-right: 14px;
-        border-top: 1px solid #e7e7e7;
-        text-align: left;
-      }
-
-      .board-table tbody th p{
-        display: none;
-      }
-
-      .btn {
-        display: inline-block;
-        padding: 0 30px;
-        font-size: 15px;
-        font-weight: 400;
-        background: transparent;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: middle;
-        -ms-touch-action: manipulation;
-        touch-action: manipulation;
-        cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        border: 1px solid transparent;
-        text-transform: uppercase;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        border-radius: 0;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s;
-      }
-
-      .btn-dark {
-        background: #555;
-        color: #fff;
-      }
-
-      .btn-dark:hover, .btn-dark:focus {
-        background: #373737;
-        border-color: #373737;
-        color: #fff;
-      }
-
-      .btn-dark {
-        background: #555;
-        color: #fff;
-      }
-
-      .btn-dark:hover, .btn-dark:focus {
-        background: #373737;
-        border-color: #373737;
-        color: #fff;
-      }
-
-      /* reset */
-
       * {
-        list-style: none;
-        text-decoration: none;
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-      .clearfix:after {
-        content: '';
-        display: block;
-        clear: both;
-      }
-      .container {
-        width: 1400px;
-        margin: 0 auto;
-      }
-      .blind {
-        position: absolute;
-        overflow: hidden;
-        clip: rect(0 0 0 0);
-        margin: -1px;
-        width: 1px;
-        height: 1px;
-      }
+        margin:0;
+        padding:0;
+        font-family:Verdana,sans-serif;
+        box-sizing:border-box;
+        }
+
+        body {color:#333;font-size:14px;}
+        #wrap {
+            width:1200px;
+            margin: 0 auto;
+        }
+        /* table, ul */
+        table {width:100%;border:0; border-collapse:collapse;}
+        th,td {padding:8px 0;vertical-align:middle}
+        th {text-align:left;}
+        ul, li {margin:0;padding:0;list-style:none;}
+        /* input */
+        input[type=text] {display:inline-block;width:100%;height:32px;padding:0 10px;border:1px solid #ccc;font-size:14px;}
+        textarea {
+            display:inline-block;
+            width:100%;
+            height: 400px;
+            padding:10px;
+            border:1px solid #ccc;
+            font-size:16px;
+            
+        }
+        input[type=button],input[type=submit], button {border:0;font-size:14px;}
+        /* button */
+        .btn-wrap {margin:10px 0 0 0;text-align:right}
+        .btn {display:inline-block;padding:12px 20px;background-color:#333;color:#fff;text-align:center;line-height:1;}
+        .back.btn{background-color: #fff; border: 1px solid #aaa;color: #343434; box-sizing: border-box;}
+        .result {padding:15px;background-color:#eee;}
+        .result + .result {border-top:1px solid #ccc;}
+        .result ul {position:relative;overflow:hidden;}
+        .result li:nth-child(1),
+        .result li:nth-child(2) {float:right;color:#999;font-size:12px}
+        .result li:nth-child(1) {padding-left:8px}
+        .result li:nth-child(3) {font-weight:bold;}
+
+        fieldset {
+            padding:16px; 
+            margin: 40px 0;
+        }
+        legend {display:none}
+        .cont {overflow:hidden;height:27px;}
+        .commtIptBox {
+        display:flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        padding-top:20px;
+        }
+        .commtBox {flex:0 0 100%;font-size:12px;padding:10px 8px 0}
+        .contTxtBox {padding:10px 0 0;}
+        #btnCommt {display:block;flex:0 0 60px;height:32px;margin-left:8px;background:#666;color:#fff;line-height:1;}
+        #btnCommtInput {flex:1}
+        #btnCommtName {flex:0 0 100px;margin-right:8px}
+        .count {display:inline-block;margin-left:8px;font-style:normal;font-weight:bold;color:blue}
 
     </style>
   </head>
@@ -288,73 +171,53 @@
             </div>
             <div class="carousel-caption d-none d-md-block">
               <h3 class="mb-5">정보게시판</h3>
-              <h1>공지사항</h1>
+              <h1>글쓰기</h1>
             </div>
           </div>
         </div>
 
-        <!-- 게시글 리스트 -->
-        <section class="notice">
-          <div class="page-title">
-                <div class="container">
-                    <h3>공지사항</h3>
-                </div>
-          </div>
-        
-            <!-- board seach area -->
-            <div id="board-search">
-                <div class="container">
-                    <div class="search-window">
-                        <form action="">
-                            <div class="search-wrap">
-                                <label for="search" class="blind">공지사항 내용 검색</label>
-                                <input id="search" type="search" name="" placeholder="검색어를 입력해주세요." value="">
-                                <button type="submit" class="btn btn-dark">검색</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-           
-          <!-- board list area -->
-            <div id="board-list">
-                <div class="container">
-                    <table class="board-table">
-                        <thead>
-                          <tr>
-                              <th scope="col" class="th-num">번호</th>
-                              <th scope="col" class="th-title">제목</th>
-                              <th scope="col" class="th-date">등록일</th>
-                          </tr>
-                        </thead>
-                        <tbody id="notice_board">
-                          <!-- <tr>
-                              <td>3</td>
-                              <th>
-                                <a href="#!">[공지사항] 개인정보 처리방침 변경안내처리방침</a>
-                                <p>테스트</p>
-                              </th>
-                              <td>2017.07.13</td>
-                          </tr>
+        <!-- 게시글 생성부분 -->
+        <div id="wrap">
+            <div id="resultWrap"></div>
           
-                          <tr>
-                              <td>2</td>
-                              <th><a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
-                              <td>2017.06.15</td>
-                          </tr>
+            <fieldset>
+              <legend>board</legend>
+              <form id="frm1">
           
-                          <tr>
-                              <td>1</td>
-                              <th><a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
-                              <td>2017.06.15</td>
-                          </tr> -->
-                        </tbody>
-                    </table>
+                <table>
+                  <caption></caption>
+                  <colgroup>
+                    <col style="width:100px" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">작성자</th>
+                      <td><input type="text" id="iptName" value="" /></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">제목</th>
+                      <td><input type="text" id="iptTitle" value="" /></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">내용</th>
+                      <td><textarea id="iptCont" rows="5" cols="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">첨부 파일</th>
+                        <td><input class="form-control1" id="file" type="file" multiple></td>
+                      </tr>
+                  </tbody>
+                </table>
+                <div class="btn-wrap">
+                    <input type="button" id="back_btn" class="btn back" value="취소">
+                    <input type="button" id="btnRegist" class="btn" value="업로드">
                 </div>
-            </div>
-        
-        </section>
-
+              </form>
+              
+            </fieldset>
+        </div>
+            
+            
         <!-- 하단 배너 -->
         <section class="py-1">
           <div class="px-5 d-flex justify-content-between py-4">
@@ -417,15 +280,12 @@
   <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
-
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>   
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script> 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-  <!-- 커스텀 JS -->
-  <!-- <script src="./js/database.js"></script> -->
-  
   <script>
-    const firebaseConfig = {
+      const firebaseConfig = {
       apiKey: "AIzaSyCLHolAddBBQWNdlxM0hIDaiIilxo9CytI",
       authDomain: "chungnamws.firebaseapp.com",
       databaseURL: "https://chungnamws-default-rtdb.asia-southeast1.firebasedatabase.app",
@@ -435,26 +295,155 @@
       appId: "1:440901868102:web:0d0fc409237c4ab4834847",
       measurementId: "G-1GZ7YCCC8D"         
     };
-
-            // Initialize Firebase
+    // Initialize Firebase
     const app = firebase.initializeApp(firebaseConfig)
+  </script>
+
+  <!-- 커스텀 JS -->
+  <!-- <script src="./js/database.js"></script> -->
+  
+  <script>
+
+    // 날짜불러오기
+    const today = new Date();
+    let year = today.getFullYear(); // 년도
+    let month = today.getMonth() + 1;  // 월
+    let date = today.getDate();  // 날짜
 
     // 데이터 불러오기
+    // doc().set() 문서이름 지정
+    // add() 문서이름 자동 지정
     const db = firebase.firestore(app);
-    db.collection("posts").get().then((snabshot)=>{
-      snabshot.forEach((doc) => {
-        console.log(doc.data())
-        var postObject =  doc.data()
-        var post = `
-          <tr> 
-            <td>${postObject.no}</td>
-            <th><a href="#!">${postObject.title}</a></th>
-            <td>${postObject.date}</td>
-          </tr>`
+    const storage = firebase.storage();
 
-        $("#notice_board").append(post)
-      });
+    // 간단한 해시 함수로 고유한 숫자 생성
+    function generateHash(docId) {
+        let hash = 0;
+        for (let i = 0; i < docId.length; i++) {
+            const char = docId.charCodeAt(i);
+            hash = (hash << 5) - hash + char;
+            hash = hash & hash; // 비트 연산으로 변환
+        }
+        return Math.abs(hash) % 10000; // 음수 방지를 위해 절대값으로
+    }
+
+    $(document).ready(function(){
+        // 폼이벤트 막기
+         // 폼 이벤트 막기 및 폼 데이터 처리
+    $('#frm1').on("submit", function(event) {
+        event.preventDefault();  // 폼 제출 시 페이지 새로고침 방지
+        console.log('폼이 제출되었습니다!');
+        // 여기에 AJAX 요청이나 폼 데이터를 처리하는 로직을 추가할 수 있습니다.
+    });
+
+    // 데이터 전송 버튼 클릭 이벤트
+    $('#btnRegist').on('click', function(event) {
+        event.preventDefault();  // 기본 동작 방지
+
+        
+        var title = $("#iptTitle").val();
+        var name = $("#iptName").val();
+        var timestamp =firebase.firestore.FieldValue.serverTimestamp();
+        var content = $("#iptCont").val();
+        var time = year + '/' + month + '/' + date
+
+        // 스토리지 변수지정
+        var storageRef = storage.ref();
+
+        // 인풋에 넣은 파일 찾기
+        var files = document.querySelector("#file").files;
+      
+    // 업로드 상태를 추적할 Promise 배열 생성
+        var uploadPromises = [];
+
+        if(title == ""){
+            return alert("제목을 입력해주세요")
+        }
+        if(name == ""){
+            return alert("작성자를 입력해주세요")
+        }
+        if(content == ""){
+            return alert("내용을 입력해주세요")
+        }
+
+        // 파일을 배열로 변환 후 각각 업로드 처리
+        Array.from(files).forEach((file) => {
+            // 각 파일을 Firebase Storage에 저장할 경로 설정
+            var fileRef = storageRef.child('uploads/' + file.name);
+
+            // 파일 업로드 및 Promise 저장
+            var uploadTask = fileRef.put(file);
+
+            // 업로드 작업을 Promise로 변환하여 배열에 저장
+            var uploadPromise = new Promise((resolve, reject) => {
+                uploadTask.on('state_changed',
+                    function progress(snapshot) {
+                        var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                        console.log('업로드 진행 상황: ' + progress + '%');
+                    },
+                    function error(err) {
+                        console.error("업로드 중 오류 발생: ", err);
+                        reject(err);  // 오류 시 Promise 거부
+                    },
+                    function complete() {
+                        // 업로드 완료 후 다운로드 URL 가져오기
+                        uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+                            resolve(downloadURL);  // 성공 시 Promise 해결
+
+                            var save = {
+                                title: title,
+                                create_admin: name,
+                                content: content,
+                                date: time,  // 예: 작성된 시간
+                                createdAt: timestamp,
+                                file:downloadURL  // 타임스탬프
+                            }
+                            db.collection("posts").add(save).then((docRef) => {
+                            const no = generateHash(docRef.id);  // 문서 ID로부터 고유 번호 생성
+                                docRef.update({ no: no });  // 생성된 번호를 문서에 업데이트v
+                                console.log("게시글이 성공적으로 추가되었습니다. 번호:", no);
+                                
+                            }).catch((error) => {
+                                console.error("게시글 추가 중 오류 발생: ", error);
+                            });
+
+                        });
+                    }
+                );
+            });
+
+            // Promise 배열에 추가
+            uploadPromises.push(uploadPromise);
+        });
+       
+          
+        
+        
+       
+       
+         // 모든 파일 업로드 완료 후 페이지 전환
+        Promise.all(uploadPromises).then(function(downloadURLs) {
+            alert('글이 업로드 되었습니다.', downloadURLs);
+            // 업로드가 모두 완료되었을 때 페이지 이동
+            window.location.href = "notice_board.html";
+        }).catch(function(error) {
+            console.error('파일 업로드 중 오류 발생:', error);
+            alert('파일 업로드 중 오류가 발생했습니다. 다시 시도해주세요.');
+        });
+        
+    });
+
+    // 뒤로 가기 버튼 클릭 이벤트
+    $('#back_btn').on('click', function(event) {
+        event.preventDefault();  // 기본 동작 방지
+        console.log('취소 버튼이 클릭되었습니다!');
+        // 뒤로 가기나 다른 페이지로 이동하는 동작 추가
+        window.location.href = "notice_board.html";  // 브라우저의 뒤로 가기 동작
+    });
+
     })
+    
+
   </script>
   <!-- main js -->
    <script src="./js/main.js"></script>
