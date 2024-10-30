@@ -399,8 +399,8 @@
                                 file:downloadURL  // 타임스탬프
                             }
                             db.collection("posts").add(save).then((docRef) => {
-                            const no = generateHash(docRef.id);  // 문서 ID로부터 고유 번호 생성
-                                docRef.update({ no: no });  // 생성된 번호를 문서에 업데이트v
+                                const no = generateHash(docRef.id);  // 문서 ID로부터 고유 번호 생성
+                                docRef.update({ no: no });  // 생성된 번호를 문서에 업데이트
                                 console.log("게시글이 성공적으로 추가되었습니다. 번호:", no);
                                 
                             }).catch((error) => {

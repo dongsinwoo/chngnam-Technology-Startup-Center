@@ -1,6 +1,6 @@
 // 푸터 밑 헤더 작업
 const headInnerContent = ()=>{
-    const header = document.querySelector("nav")
+    const header = document.querySelector(".header")
 
     header.innerHTML = `
     <div class="container px-5  align-items-center">
@@ -12,7 +12,7 @@ const headInnerContent = ()=>{
             <label for="mobile_check">
                 <span></span>
                 <span></span>
-                  <span></span>
+                <span></span>
             </label>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -70,15 +70,15 @@ const headInnerContent = ()=>{
 }
 
 const footerInnerContent = ()=>{
-    const footer = document.querySelector("footer")
+    const footer = document.querySelector(".contact")
     footer.innerHTML =`
     <div class="container px-5">
-        <div class="row align-items-center justify-content-between flex-column flex-sm-row inner_box">
+        <div class="f_flex_box">
             <div class="col-auto">
                 <div class="small m-0 text-white">
                     <span>충청남도 서산시 해미면 한서1로 46 한서대학교 인곡관 1층(충남서부권 중장년기술창업센터) 서산시, 충청남도 31962</span> 
-                    <p>전화번호: (서산)041-660-1326/1327 (서천)041-951-1326 | 이메일: win5328@gmail.com </p>
-                    <span>Copyright &copy;CHUNGNAMWRSTARTUPALL RIGHTS RESEVED.</span> 
+                    <p>전화번호: (서산)041-660-1326/1327 (서천)041-951-1326 | 이메일: bhs1424@hanseo.ac.kr </p>
+                    <span>COPYRIGHT 2024 충남서부권 중장년기술창업센터 ALL RIGHTS RESERVED.</span>
                 </div>
             </div>
 
@@ -112,22 +112,13 @@ const fixed_k_s_content = ()=>{
     // footer.innerHTML 
 }
 
-const imgLoad = ()=>{
-    const banner_img = document.querySelector(".carousel .carousel-inner .sub_page img")
-    banner_img.src = "./assets/head_banner_1800_400.jpg"
-}
-
-
-
 // 이벤트 선언
 document.addEventListener("DOMContentLoaded",()=>{
     setTimeout(()=>{
         fixed_k_s_content()
     },1500)
-    headInnerContent()
+    // headInnerContent()
     footerInnerContent()
-    imgLoad()
-
     
   
 })
