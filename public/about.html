@@ -12,69 +12,7 @@
     <link href="./css/reset.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet" />
     <link href="./css/basic.css" rel="stylesheet" />
-    <style>
-      * {
-        margin:0;
-        padding:0;
-        font-family:Verdana,sans-serif;
-        box-sizing:border-box;
-        }
-
-        body {color:#333;font-size:14px;}
-        #wrap {
-            width:1200px;
-            margin: 0 auto;
-        }
-        /* table, ul */
-        table {width:100%;border:0; border-collapse:collapse;}
-        th,td {padding:8px 0;vertical-align:middle}
-        th {text-align:left;}
-        ul, li {margin:0;padding:0;list-style:none;}
-        /* input */
-        input[type=text] {display:inline-block;width:100%;height:32px;padding:0 10px;border:1px solid #ccc;font-size:14px;}
-        textarea {
-            display:inline-block;
-            width:100%;
-            height: 400px;
-            padding:10px;
-            border:1px solid #ccc;
-            font-size:16px;
-            
-        }
-        input[type=button],input[type=submit], button {border:0;font-size:14px;}
-        /* button */
-        .btn-wrap {margin:10px 0 0 0;text-align:right}
-        .btn {display:inline-block;padding:12px 20px;background-color:#333;color:#fff;text-align:center;line-height:1;}
-        .back.btn{background-color: #fff; border: 1px solid #aaa;color: #343434; box-sizing: border-box;}
-        .result {padding:15px;background-color:#eee;}
-        .result + .result {border-top:1px solid #ccc;}
-        .result ul {position:relative;overflow:hidden;}
-        .result li:nth-child(1),
-        .result li:nth-child(2) {float:right;color:#999;font-size:12px}
-        .result li:nth-child(1) {padding-left:8px}
-        .result li:nth-child(3) {font-weight:bold;}
-
-        fieldset {
-            padding:16px; 
-            margin: 40px 0;
-        }
-        legend {display:none}
-        .cont {overflow:hidden;height:27px;}
-        .commtIptBox {
-        display:flex;
-        display: -webkit-flex;
-        flex-wrap: wrap;
-        -webkit-flex-wrap: wrap;
-        padding-top:20px;
-        }
-        .commtBox {flex:0 0 100%;font-size:12px;padding:10px 8px 0}
-        .contTxtBox {padding:10px 0 0;}
-        #btnCommt {display:block;flex:0 0 60px;height:32px;margin-left:8px;background:#666;color:#fff;line-height:1;}
-        #btnCommtInput {flex:1}
-        #btnCommtName {flex:0 0 100px;margin-right:8px}
-        .count {display:inline-block;margin-left:8px;font-style:normal;font-weight:bold;color:blue}
-
-    </style>
+    <link href="./css/about.css" rel="stylesheet" />
   </head>
   <body>
     <div class="fixed_k_startup">
@@ -170,54 +108,115 @@
               </a>
             </div>
             <div class="carousel-caption d-none d-md-block">
-              <h3 class="mb-5">정보게시판</h3>
-              <h1>공지사항</h1>
+              <h3 class="mb-5">센터 소개</h3>
+              <h1>충남 서부권 중장년기술창업센터 소개</h1>
             </div>
           </div>
         </div>
 
-        <!-- 게시글 생성부분 -->
-        <div id="wrap">
-            <div id="resultWrap"></div>
+        <!-- 소개 -->
+        <div class="content_container">
+          <h1 class="title">중장년기술창업센터 소개</h1>
           
-            <fieldset>
-              <legend>board</legend>
-              <form id="frm1">
-          
-                <table>
-                  <caption></caption>
-                  <colgroup>
-                    <col style="width:100px" />
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <th scope="row">작성자</th>
-                      <td><input type="text" id="iptName" value="" /></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">제목</th>
-                      <td><input type="text" id="iptTitle" value="" /></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">내용</th>
-                      <td><textarea id="iptCont" rows="5" cols="10" readonly></textarea></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">첨부 파일</th>
-                        <td><input class="form-control1" id="file" type="file" multiple></td>
-                      </tr>
-                  </tbody>
-                </table>
-                <div class="btn-wrap">
-                    <input type="button" id="back_btn" class="btn back" value="취소">
-                    <input type="button" id="btnRegist" class="btn" value="업로드">
-                </div>
-              </form>
-              
-            </fieldset>
-        </div>
-            
-        
+          <div class="card">
+              <div class="card-header">
+                  <h2 class="card-title">센터 소개</h2>
+              </div>
+              <div class="card-content">
+                  <p class="text-muted">
+                      중장년기술창업센터는 풍부한 경험과 전문성을 갖춘 중장년층의 성공적인 기술창업을 지원하기 위해 설립되었습니다. 
+                      우리 센터는 중장년 예비창업자와 3년 미만 창업기업에게 맞춤형 지원 프로그램을 제공하여 혁신적인 기술창업 생태계를 조성하고 있습니다.
+                  </p>
+              </div>
+          </div>
+  
+          <div class="card">
+              <div class="card-header">
+                  <h2 class="card-title">조직도</h2>
+              </div>
+              <div class="card-content">
+                <img src="./assets/중장년센터_조직도.png" alt="">
+              </div>
+          </div>
+  
+          <div class="card">
+              <div class="card-header">
+                  <h2 class="card-title">센터의 주요 활동</h2>
+              </div>
+              <div class="card-content">
+                  <div class="activities-grid">
+                      <div class="activity">
+                          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>
+                              <path d="M9 18h6"></path>
+                              <path d="M10 22h4"></path>
+                          </svg>
+                          <span>맞춤형 창업 교육 프로그램 운영</span>
+                      </div>
+                      <div class="activity">
+                          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                              <circle cx="9" cy="7" r="4"></circle>
+                              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                          </svg>
+                          <span>전문가 멘토링 및 컨설팅 제공</span>
+                      </div>
+                      <div class="activity">
+                          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <rect x="2" y="2" width="20" height="20" rx="2"></rect>
+                              <path d="M7 12h10"></path>
+                              <path d="M12 7v10"></path>
+                          </svg>
+                          <span>창업 공간 및 시설 지원</span>
+                      </div>
+                      <div class="activity">
+                          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M17 8l4 4-4 4"></path>
+                              <path d="M3 12h8"></path>
+                              <path d="M11 16l4-4-4-4"></path>
+                          </svg>
+                          <span>네트워킹 및 협력 기회 창출</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="card">
+              <div class="card-header">
+                  <h2 class="card-title">센터의 목표</h2>
+              </div>
+              <div class="card-content">
+                  <div class="goals">
+                      <div class="goal">
+                          <div class="goal-header">
+                              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <circle cx="12" cy="12" r="10"></circle>
+                                  <circle cx="12" cy="12" r="6"></circle>
+                                  <circle cx="12" cy="12" r="2"></circle>
+                              </svg>
+                              <span class="goal-title">중장년 기술창업 활성화</span>
+                          </div>
+                          <p class="goal-description">
+                              중장년층의 경험과 전문성을 활용한 혁신적인 기술창업을 촉진하여 새로운 일자리 창출과 경제 활성화에 기여합니다.
+                          </p>
+                      </div>
+                      <div class="goal">
+                          <div class="goal-header">
+                              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                              </svg>
+                              <span class="goal-title">지속 가능한 창업 생태계 조성</span>
+                          </div>
+                          <p class="goal-description">
+                              중장년 창업자들이 안정적으로 성장할 수 있는 환경을 만들어 장기적인 성공을 지원합니다.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
     </main>
     <footer class="py-4 mt-auto">
       <div class="container px-5">
@@ -244,69 +243,68 @@
   <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>   
-  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script> 
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-  <script src="js/notice_detail.js"></script>
+  <!-- 커스텀 JS -->
+  <!-- <script src="./js/database.js"></script> -->
   
-  <!-- main js -->
-   <script src="./js/main.js"></script>
-   <script>
+  <script>
     const firebaseConfig = {
-        apiKey: "AIzaSyCLHolAddBBQWNdlxM0hIDaiIilxo9CytI",
-        authDomain: "chungnamws.firebaseapp.com",
-        databaseURL: "https://chungnamws-default-rtdb.asia-southeast1.firebasedatabase.app",
-        projectId: "chungnamws",
-        storageBucket: "chungnamws.appspot.com",
-        messagingSenderId: "440901868102",
-        appId: "1:440901868102:web:0d0fc409237c4ab4834847",
-        measurementId: "G-1GZ7YCCC8D"         
+      apiKey: "AIzaSyCLHolAddBBQWNdlxM0hIDaiIilxo9CytI",
+      authDomain: "chungnamws.firebaseapp.com",
+      databaseURL: "https://chungnamws-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "chungnamws",
+      storageBucket: "chungnamws.appspot.com",
+      messagingSenderId: "440901868102",
+      appId: "1:440901868102:web:0d0fc409237c4ab4834847",
+      measurementId: "G-1GZ7YCCC8D"         
     };
 
-          // Initialize Firebase
+            // Initialize Firebase
     const app = firebase.initializeApp(firebaseConfig)
 
-
-
-    const db = firebase.firestore();
-
-    // URL에서 게시글 ID 가져오기
-    const urlParams = new URLSearchParams(window.location.search);
-    const postId = urlParams.get('id');
-
-    // DOM 요소
-    const titleElement = document.getElementById('iptTitle');
-    // const dateElement = document.getElementById('iptDate');
-    const contentElement = document.getElementById('iptCont');
-
-    // 게시글 데이터 불러오기
-    async function loadPost() {
-        try {
-            const doc = await db.collection('posts').doc(postId).get();
-            if (doc.exists) {
-                const post = doc.data();
-                console.log("Post data:", post);
-                titleElement.value = post.title;
-                // dateElement.value = post.date;
-                contentElement.value = post.content;
-            } else {
-                alert('존재하지 않는 게시글입니다.');
-                window.location.href = 'notice_board.html';
-            }
-        } catch (error) {
-            console.error("Error loading post: ", error);
-            alert('게시글을 불러오는데 실패했습니다.');
+    // 데이터 불러오기
+    const db = firebase.firestore(app);
+    db.collection("posts").get().then((snapshot)=>{  // snabshot -> snapshot으로 수정
+    if (snapshot.empty) {
+        // 게시글이 없을 때 메시지 표시
+        var emptyMessage = document.createElement('tr');
+        emptyMessage.innerHTML = `
+            <td colspan="3" class="empty-message">
+                아직 게시글이 작성되지 않았습니다.
+            </td>`;
+        $("#notice_board").append(emptyMessage);
+    } else {
+        snapshot.forEach((doc) => {
+            // 기존 게시글 표시 코드
+            var postObject = doc.data();
+            var postElement = document.createElement('tr');
+            postElement.className = 'post-item';
+            postElement.innerHTML = `
+                <td>${postObject.no}</td>
+                <th><a href="#!">${postObject.title}</a></th>
+                <td>${postObject.date}</td>`;
+            
+            postElement.onclick = () => {
+                window.location.href = `notice_detail.html?id=${doc.id}`;
+            };
+                $("#notice_board").append(postElement);
+            });
         }
-    }
-
-    // 목록으로 돌아가기
-    function goBack() {
-        window.location.href = 'notice_board.html';
-    }
-
-    // 페이지 로드시 게시글 불러오기
-    loadPost(); 
-   </script>
+      }).catch((error) => {
+        // 에러 발생 시 처리
+        console.error("Error getting documents: ", error);
+        var errorMessage = document.createElement('tr');
+        errorMessage.innerHTML = `
+            <td colspan="3" class="empty-message">
+                데이터를 불러오는 중 오류가 발생했습니다.
+            </td>`;
+        $("#notice_board").append(errorMessage);
+    });
+  </script>
+  <!-- main js -->
+   <script src="./js/main.js"></script>
   </body>
 </html>
